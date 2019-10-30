@@ -1,0 +1,750 @@
+[2019-10-28 18:04:15] production.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "serve" is not defined. in C:\xampp\htdocs\project\vendor\symfony\console\Application.php:660
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(237): Symfony\Component\Console\Application->find('serve')
+#1 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"serve\" is not defined. at C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php:660)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('serve')
+#1 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-10-28 18:06:25] production.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "serve" is not defined. in C:\xampp\htdocs\project\vendor\symfony\console\Application.php:660
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(237): Symfony\Component\Console\Application->find('serve')
+#1 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"serve\" is not defined. at C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php:660)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('serve')
+#1 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-10-28 17:19:55] local.ERROR: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'homing'@'localhost' (using password: YES) in C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php:70
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php(70): PDO->__construct('mysql:host=127....', 'homing', 'secret', Array)
+#1 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'homing', 'secret', Array)
+#2 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\Database\Connectors\ConnectionFactory->Illuminate\Database\Connectors\{closure}()
+#5 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(920): call_user_func(Object(Closure))
+#6 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(453): Illuminate\Database\Connection->getPdo()
+#7 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(658): Illuminate\Database\Connection->Illuminate\Database\{closure}('create table `m...', Array)
+#8 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(625): Illuminate\Database\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
+#9 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(460): Illuminate\Database\Connection->run('create table `m...', Array, Object(Closure))
+#10 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\Blueprint.php(97): Illuminate\Database\Connection->statement('create table `m...')
+#11 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\Builder.php(290): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#12 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\Builder.php(167): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#13 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\DatabaseMigrationRepository.php(157): Illuminate\Database\Schema\Builder->create('migrations', Object(Closure))
+#14 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\InstallCommand.php(54): Illuminate\Database\Migrations\DatabaseMigrationRepository->createRepository()
+#15 [internal function]: Illuminate\Database\Console\Migrations\InstallCommand->handle()
+#16 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\project\vendor\illuminate\support\helpers.php(522): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#18 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(90): value(Object(Closure))
+#19 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#20 C:\xampp\htdocs\project\vendor\illuminate\container\Container.php(591): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#21 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(202): Illuminate\Container\Container->call(Array)
+#22 C:\xampp\htdocs\project\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#23 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(189): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#24 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(934): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#26 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#29 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#30 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[HY000] [1045] Access denied for user 'homing'@'localhost' (using password: YES) (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') in C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php:665
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(625): Illuminate\Database\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
+#1 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(460): Illuminate\Database\Connection->run('create table `m...', Array, Object(Closure))
+#2 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\Blueprint.php(97): Illuminate\Database\Connection->statement('create table `m...')
+#3 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\Builder.php(290): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\Builder.php(167): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\DatabaseMigrationRepository.php(157): Illuminate\Database\Schema\Builder->create('migrations', Object(Closure))
+#6 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\InstallCommand.php(54): Illuminate\Database\Migrations\DatabaseMigrationRepository->createRepository()
+#7 [internal function]: Illuminate\Database\Console\Migrations\InstallCommand->handle()
+#8 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\vendor\illuminate\support\helpers.php(522): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#10 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(90): value(Object(Closure))
+#11 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#12 C:\xampp\htdocs\project\vendor\illuminate\container\Container.php(591): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#13 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(202): Illuminate\Container\Container->call(Array)
+#14 C:\xampp\htdocs\project\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#15 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(189): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#16 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(934): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main} {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'homing'@'localhost' (using password: YES) (SQL: create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php:665)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(460): Illuminate\\Database\\Connection->run('create table `m...', Array, Object(Closure))
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('create table `m...')
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\Builder.php(290): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\Builder.php(167): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(157): Illuminate\\Database\\Schema\\Builder->create('migrations', Object(Closure))
+#6 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\InstallCommand.php(54): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->createRepository()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\InstallCommand->handle()
+#8 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\support\\helpers.php(522): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(90): value(Object(Closure))
+#11 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#14 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\InstallCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'homing'@'localhost' (using password: YES) at C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'homing', 'secret', Array)
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'homing', 'secret', Array)
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(920): call_user_func(Object(Closure))
+#6 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(453): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(658): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('create table `m...', Array)
+#8 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('create table `m...', Array, Object(Closure))
+#9 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(460): Illuminate\\Database\\Connection->run('create table `m...', Array, Object(Closure))
+#10 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\Blueprint.php(97): Illuminate\\Database\\Connection->statement('create table `m...')
+#11 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\Builder.php(290): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#12 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\Builder.php(167): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#13 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(157): Illuminate\\Database\\Schema\\Builder->create('migrations', Object(Closure))
+#14 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\InstallCommand.php(54): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->createRepository()
+#15 [internal function]: Illuminate\\Database\\Console\\Migrations\\InstallCommand->handle()
+#16 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#17 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\support\\helpers.php(522): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#18 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(90): value(Object(Closure))
+#19 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#20 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#21 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#22 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#24 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\InstallCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 {main}
+"} 
+[2019-10-28 17:21:18] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Dotenv' not found in C:\xampp\htdocs\project\bootstrap\app.php:93
+Stack trace:
+#0 C:\xampp\htdocs\project\artisan(18): require()
+#1 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Dotenv' not found at C:\\xampp\\htdocs\\project\\bootstrap\\app.php:93)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\artisan(18): require()
+#1 {main}
+"} 
+[2019-10-28 17:27:56] local.ERROR: PDOException: SQLSTATE[HY000] [1045] Access denied for user 'kiko'@'localhost' (using password: YES) in C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php:70
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php(70): PDO->__construct('mysql:host=127....', 'kiko', 'secret', Array)
+#1 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'kiko', 'secret', Array)
+#2 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\Database\Connectors\ConnectionFactory->Illuminate\Database\Connectors\{closure}()
+#5 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(920): call_user_func(Object(Closure))
+#6 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(945): Illuminate\Database\Connection->getPdo()
+#7 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(400): Illuminate\Database\Connection->getReadPdo()
+#8 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(326): Illuminate\Database\Connection->getPdoForSelect(true)
+#9 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(658): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from i...', Array)
+#10 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(625): Illuminate\Database\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(334): Illuminate\Database\Connection->run('select * from i...', Array, Object(Closure))
+#12 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\MySqlBuilder.php(18): Illuminate\Database\Connection->select('select * from i...', Array)
+#13 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\Schema\MySqlBuilder->hasTable('migrations')
+#14 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\Migrator.php(585): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#15 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(91): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#16 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(63): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->handle()
+#18 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\project\vendor\illuminate\support\helpers.php(522): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#20 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(90): value(Object(Closure))
+#21 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#22 C:\xampp\htdocs\project\vendor\illuminate\container\Container.php(591): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#23 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(202): Illuminate\Container\Container->call(Array)
+#24 C:\xampp\htdocs\project\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#25 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(189): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#26 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(934): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#29 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#30 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#31 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#32 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[HY000] [1045] Access denied for user 'kiko'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations and table_type = 'BASE TABLE') in C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php:665
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(625): Illuminate\Database\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(334): Illuminate\Database\Connection->run('select * from i...', Array, Object(Closure))
+#2 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\MySqlBuilder.php(18): Illuminate\Database\Connection->select('select * from i...', Array)
+#3 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\Schema\MySqlBuilder->hasTable('migrations')
+#4 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\Migrator.php(585): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#5 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(91): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#6 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(63): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->handle()
+#8 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\vendor\illuminate\support\helpers.php(522): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#10 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(90): value(Object(Closure))
+#11 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#12 C:\xampp\htdocs\project\vendor\illuminate\container\Container.php(591): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#13 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(202): Illuminate\Container\Container->call(Array)
+#14 C:\xampp\htdocs\project\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#15 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(189): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#16 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(934): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main} {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'kiko'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations and table_type = 'BASE TABLE') at C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php:665)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(334): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\support\\helpers.php(522): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(90): value(Object(Closure))
+#11 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#14 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'kiko'@'localhost' (using password: YES) at C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'kiko', 'secret', Array)
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'kiko', 'secret', Array)
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(920): call_user_func(Object(Closure))
+#6 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(945): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(400): Illuminate\\Database\\Connection->getReadPdo()
+#8 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(326): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(658): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(334): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#18 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\support\\helpers.php(522): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(90): value(Object(Closure))
+#21 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#22 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#23 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#24 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2019-10-28 17:28:15] local.ERROR: PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php:70
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php(70): PDO->__construct('mysql:host=127....', '', '', Array)
+#1 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', '', '', Array)
+#2 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\xampp\htdocs\project\vendor\illuminate\database\Connectors\ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\Database\Connectors\ConnectionFactory->Illuminate\Database\Connectors\{closure}()
+#5 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(920): call_user_func(Object(Closure))
+#6 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(945): Illuminate\Database\Connection->getPdo()
+#7 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(400): Illuminate\Database\Connection->getReadPdo()
+#8 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(326): Illuminate\Database\Connection->getPdoForSelect(true)
+#9 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(658): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from i...', Array)
+#10 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(625): Illuminate\Database\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(334): Illuminate\Database\Connection->run('select * from i...', Array, Object(Closure))
+#12 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\MySqlBuilder.php(18): Illuminate\Database\Connection->select('select * from i...', Array)
+#13 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\Schema\MySqlBuilder->hasTable('migrations')
+#14 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\Migrator.php(585): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#15 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(91): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#16 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(63): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->handle()
+#18 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\project\vendor\illuminate\support\helpers.php(522): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#20 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(90): value(Object(Closure))
+#21 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#22 C:\xampp\htdocs\project\vendor\illuminate\container\Container.php(591): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#23 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(202): Illuminate\Container\Container->call(Array)
+#24 C:\xampp\htdocs\project\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#25 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(189): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#26 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(934): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#27 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#28 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#29 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#30 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#31 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#32 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations and table_type = 'BASE TABLE') in C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php:665
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(625): Illuminate\Database\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 C:\xampp\htdocs\project\vendor\illuminate\database\Connection.php(334): Illuminate\Database\Connection->run('select * from i...', Array, Object(Closure))
+#2 C:\xampp\htdocs\project\vendor\illuminate\database\Schema\MySqlBuilder.php(18): Illuminate\Database\Connection->select('select * from i...', Array)
+#3 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\Schema\MySqlBuilder->hasTable('migrations')
+#4 C:\xampp\htdocs\project\vendor\illuminate\database\Migrations\Migrator.php(585): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#5 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(91): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#6 C:\xampp\htdocs\project\vendor\illuminate\database\Console\Migrations\MigrateCommand.php(63): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\Database\Console\Migrations\MigrateCommand->handle()
+#8 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\project\vendor\illuminate\support\helpers.php(522): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#10 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(90): value(Object(Closure))
+#11 C:\xampp\htdocs\project\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#12 C:\xampp\htdocs\project\vendor\illuminate\container\Container.php(591): Illuminate\Container\BoundMethod::call(Object(Laravel\Lumen\Application), Array, Array, NULL)
+#13 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(202): Illuminate\Container\Container->call(Array)
+#14 C:\xampp\htdocs\project\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#15 C:\xampp\htdocs\project\vendor\illuminate\console\Command.php(189): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#16 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(934): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(273): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\project\vendor\symfony\console\Application.php(149): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\project\vendor\illuminate\console\Application.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\xampp\htdocs\project\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main} {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) (SQL: select * from information_schema.tables where table_schema = homestead and table_name = migrations and table_type = 'BASE TABLE') at C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php:665)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(334): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#7 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#8 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#9 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\support\\helpers.php(522): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#10 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(90): value(Object(Closure))
+#11 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#12 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#13 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#14 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#16 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) at C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', '', '', Array)
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', '', '', Array)
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(920): call_user_func(Object(Closure))
+#6 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(945): Illuminate\\Database\\Connection->getPdo()
+#7 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(400): Illuminate\\Database\\Connection->getReadPdo()
+#8 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(326): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(658): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Connection.php(334): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Schema\\MySqlBuilder.php(18): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#17 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#18 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#19 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\support\\helpers.php(522): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(90): value(Object(Closure))
+#21 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#22 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#23 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#24 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#25 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#26 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 C:\\xampp\\htdocs\\project\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 C:\\xampp\\htdocs\\project\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 {main}
+"} 
+[2019-10-28 17:55:02] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 17:55:14] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 18:00:20] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 18:00:59] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 18:05:50] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 18:05:58] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 18:08:50] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 18:09:01] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected '->' (T_OBJECT_OPERATOR) in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#1 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#3 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#4 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '->' (T_OBJECT_OPERATOR) at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#1 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#3 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#4 {main}
+"} 
+[2019-10-28 18:09:19] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Router' not found in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\bootstrap\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Router' not found at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2019-10-28 18:09:20] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'Router' not found in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\bootstrap\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Router' not found at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2019-10-28 18:09:25] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'router' not found in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\bootstrap\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'router' not found at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2019-10-28 18:09:26] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'router' not found in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\bootstrap\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'router' not found at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2019-10-28 18:09:26] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Class 'router' not found in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\bootstrap\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#2 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#4 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#5 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'router' not found at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require()
+#1 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#2 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#5 {main}
+"} 
+[2019-10-28 18:09:56] local.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined function csrf_token() in C:\xampp\htdocs\project\storage\framework\views\121b70ced7b7bbcfd60a6dcbda9c3f87150b4521.php:19
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\view\Engines\PhpEngine.php(43): include()
+#1 C:\xampp\htdocs\project\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\project\vendor\illuminate\view\View.php(143): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\project\vendor\illuminate\view\View.php(126): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\project\vendor\illuminate\view\View.php(91): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\project\vendor\illuminate\http\Response.php(42): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\project\vendor\symfony\http-foundation\Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(436): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(289): Laravel\Lumen\Application->prepareResponse(Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#12 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#14 C:\xampp\htdocs\project\public\index.php(28): Laravel\Lumen\Application->run()
+#15 {main}
+
+Next ErrorException: Call to undefined function csrf_token() (View: C:\xampp\htdocs\project\resources\views\welcome.blade.php) in C:\xampp\htdocs\project\storage\framework\views\121b70ced7b7bbcfd60a6dcbda9c3f87150b4521.php:19
+Stack trace:
+#0 C:\xampp\htdocs\project\vendor\illuminate\view\Engines\PhpEngine.php(47): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Symfony\Component\Debug\Exception\FatalThrowableError), 1)
+#1 C:\xampp\htdocs\project\vendor\illuminate\view\Engines\CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\project\vendor\illuminate\view\View.php(143): Illuminate\View\Engines\CompilerEngine->get('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\project\vendor\illuminate\view\View.php(126): Illuminate\View\View->getContents()
+#4 C:\xampp\htdocs\project\vendor\illuminate\view\View.php(91): Illuminate\View\View->renderContents()
+#5 C:\xampp\htdocs\project\vendor\illuminate\http\Response.php(42): Illuminate\View\View->render()
+#6 C:\xampp\htdocs\project\vendor\symfony\http-foundation\Response.php(202): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(436): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(289): Laravel\Lumen\Application->prepareResponse(Object(Illuminate\View\View))
+#9 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(263): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(165): Laravel\Lumen\Application->handleFoundRoute(Array)
+#11 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(416): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#12 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(171): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(108): Laravel\Lumen\Application->dispatch(NULL)
+#14 C:\xampp\htdocs\project\public\index.php(28): Laravel\Lumen\Application->run()
+#15 {main} {"exception":"[object] (ErrorException(code: 0): Call to undefined function csrf_token() (View: C:\\xampp\\htdocs\\project\esources\\views\\welcome.blade.php) at C:\\xampp\\htdocs\\project\\storage\\framework\\views\\121b70ced7b7bbcfd60a6dcbda9c3f87150b4521.php:19)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\Engines\\PhpEngine.php(47): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(Symfony\\Component\\Debug\\Exception\\FatalThrowableError), 1)
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\View.php(143): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\View.php(126): Illuminate\\View\\View->getContents()
+#4 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\View.php(91): Illuminate\\View\\View->renderContents()
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\http\\Response.php(42): Illuminate\\View\\View->render()
+#6 C:\\xampp\\htdocs\\project\\vendor\\symfony\\http-foundation\\Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(436): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(289): Laravel\\Lumen\\Application->prepareResponse(Object(Illuminate\\View\\View))
+#9 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\xampp\\htdocs\\project\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+
+[previous exception] [object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Call to undefined function csrf_token() at C:\\xampp\\htdocs\\project\\storage\\framework\\views\\121b70ced7b7bbcfd60a6dcbda9c3f87150b4521.php:19)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\Engines\\PhpEngine.php(43): include()
+#1 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\xampp\\\\htdocs...', Array)
+#2 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\View.php(143): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\xampp\\\\htdocs...', Array)
+#3 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\View.php(126): Illuminate\\View\\View->getContents()
+#4 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\view\\View.php(91): Illuminate\\View\\View->renderContents()
+#5 C:\\xampp\\htdocs\\project\\vendor\\illuminate\\http\\Response.php(42): Illuminate\\View\\View->render()
+#6 C:\\xampp\\htdocs\\project\\vendor\\symfony\\http-foundation\\Response.php(202): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(436): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(289): Laravel\\Lumen\\Application->prepareResponse(Object(Illuminate\\View\\View))
+#9 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(263): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(165): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(416): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(171): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(108): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\xampp\\htdocs\\project\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2019-10-28 18:50:05] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(17): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:17)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(17): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 17, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 20:32:00] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:20
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(20): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:20)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(20): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 20, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
+[2019-10-28 20:32:06] local.ERROR: ErrorException: Undefined variable: app in C:\xampp\htdocs\project\routes\web.php:20
+Stack trace:
+#0 C:\xampp\htdocs\project\routes\web.php(20): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\project\bootstrap\app.php(97): require('C:\\xampp\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\xampp\htdocs\project\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\xampp\htdocs\project\bootstrap\app.php(98): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\xampp\htdocs\project\public\index.php(14): require('C:\\xampp\\htdocs...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Undefined variable: app at C:\\xampp\\htdocs\\project\outes\\web.php:20)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\project\outes\\web.php(20): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined varia...', 'C:\\\\xampp\\\\htdocs...', 20, Array)
+#1 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(97): require('C:\\\\xampp\\\\htdocs...')
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\project\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\xampp\\htdocs\\project\\bootstrap\\app.php(98): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\project\\public\\index.php(14): require('C:\\\\xampp\\\\htdocs...')
+#6 {main}
+"} 
